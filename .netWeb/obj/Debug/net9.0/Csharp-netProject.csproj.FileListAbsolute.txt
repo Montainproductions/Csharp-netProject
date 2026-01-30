@@ -1,0 +1,17 @@
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\bin\Debug\net9.0\Csharp-netProject.exe
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\bin\Debug\net9.0\Csharp-netProject.deps.json
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\bin\Debug\net9.0\Csharp-netProject.runtimeconfig.json
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\bin\Debug\net9.0\Csharp-netProject.dll
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\bin\Debug\net9.0\Csharp-netProject.pdb
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.AssemblyInfoInputs.cache
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.AssemblyInfo.cs
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.csproj.CoreCompileInputs.cache
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.dll
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\refint\Csharp-netProject.dll
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.pdb
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.genruntimeconfig.cache
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\ref\Csharp-netProject.dll
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\bin\Debug\net9.0\Pastel.dll
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-netProject.csproj.AssemblyReference.cache
+C:\Users\monta\OneDrive\Documents\GitHub\Csharp-netProject\obj\Debug\net9.0\Csharp-n.C6DF9347.Up2Date
