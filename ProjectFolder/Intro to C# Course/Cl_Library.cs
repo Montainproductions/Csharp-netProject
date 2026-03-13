@@ -1,15 +1,3 @@
-using System;
-
-public class Program
-{
-    public static void Main()
-    {
-        Library newLibrary = new Library("Joaquins Emporium");
-
-        newLibrary.WhatToDo(); 
-    }
-}
-
 public class Library
 {
     string libraryName = "";
@@ -214,7 +202,7 @@ public class Library
             Console.WriteLine("Enter the book name you want to check out:");
             string bookTitleToReturn = Console.ReadLine();
             Console.WriteLine(" ");
-            CheckOutBook(bookTitleToReturn, customer.GetListOfCheckedOutBooks());
+            CheckOutBook(bookTitleToReturn);
         }
     }
 
@@ -232,7 +220,7 @@ public class Library
             }
 
             Console.WriteLine("The following book has been removed from the list of checked out books. Book Title: " + listOfCheckedOutBooks[i].GetBookName + ". Author Name: " + listOfCheckedOutBooks[i].GetAuthorName());
-            listOfCheckedOutBooks.Remove(i);
+            listOfCheckedOutBooks.Remove(listOfCheckedOutBooks[i]);
             break;
         }
     }
@@ -243,104 +231,5 @@ public class Library
         {
             Console.WriteLine("The following book exists in the library! Book Name: " + bookToDisplay.GetBookName() + ". Author Name: " + bookToDisplay.GetAuthorName());
         }
-    }
-}
-
-public class Customer
-{
-    string customerName = "";
-    int amountOfBooksCheckedOut, maxBooksToCheckOut;
-    List<Book> listOfCheckedOutBooks = new List<Book>();
-
-    public Customer(string newCustomerName, int newMaxBooksToCheckOut)
-    {
-        customerName = newCustomerName;
-        maxBooksToCheckOut = newMaxBooksToCheckOut;
-        amountOfBooksCheckedOut = 0;
-    }
-
-    public void NewBookCheckedOut(Book newBookCheckedOut)
-    {
-        if (amountOfBooksCheckedOut == maxBooksToCheckOut)
-        {
-            Console.WriteLine("Already Checked out too many books. Return a book to be able to check out a new book.");
-            return;
-        }
-            
-        amountOfBooksCheckedOut++;
-        listOfCheckedOutBooks.Add(newBookCheckedOut);
-        newBookCheckedOut.FlipHasBeenBorrowed();
-        Console.WriteLine("New book has been checked out. The name of the book is: " + newBookCheckedOut.GetBookName() + ". By: " + newBookCheckedOut.GetAuthorName());
-    }
-
-    public void ReturnBookCheckedOut(string bookName)
-    {
-        for (int i = 0; i < listOfCheckedOutBooks.Count(); i++)
-        {
-            if(listOfCheckedOutBooks[i].GetBookName() != bookName)
-            {
-                if (i + 1 == listOfCheckedOutBooks.Count())
-                {
-                    Console.WriteLine("The book your looking for has not been checked out by this person.");
-                }
-                continue;
-            }
-
-            listOfCheckedOutBooks.RemoveAt(i);
-            amountOfBooksCheckedOut--;
-            listOfCheckedOutBooks[i].FlipHasBeenBorrowed();
-            Console.WriteLine("The following book was returned: " + bookName + ". You can check out a new book now.");
-            break;
-        }
-    }
-
-    public List<Book> GetListOfCheckedOutBooks()
-    {
-        return listOfCheckedOutBooks;
-    }
-}
-
-public class Book
-{
-
-    string bookName, authorName;
-
-    bool hasBeenCheckedOut;
-
-    public Book(string newBookName, string newAuthorName, bool newHasBeenCheckedOut)
-    {
-        bookName = newBookName;
-        authorName = newAuthorName;
-        hasBeenCheckedOut = newHasBeenCheckedOut;
-    }
-
-    public void SetBookName(string newBookName)
-    {
-        bookName = newBookName;
-    }
-
-    public void SetAuthorName(string newAuthorName)
-    {
-        authorName = newAuthorName;
-    }
-
-    public void FlipHasBeenBorrowed()
-    {
-        hasBeenCheckedOut = !hasBeenCheckedOut;
-    }
-
-    public string GetBookName()
-    {
-        return bookName;
-    }
-
-    public string GetAuthorName()
-    {
-        return authorName;
-    }
-    
-    public bool GetHasBeenCheckedOut()
-    {
-        return hasBeenCheckedOut;
     }
 }
